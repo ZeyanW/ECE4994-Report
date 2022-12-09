@@ -53,6 +53,7 @@ void setup()
 /************ Radio Loop ***************/
 
 void loop() {
+  //Send 3 bytes every 2 seconds
   delay(2000);
   uint8_t packet1[3] = {255,170,0};
   Serial.print("Sending test packet\n"); 
